@@ -3,7 +3,7 @@
         <center>
             <div class="second-section" id="projects">
                 <!-- first project -->
-                <el-container class="mt">
+                <el-container class="project-container first-project">
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <div align="center">
@@ -31,6 +31,7 @@
                         </el-row>
                 </el-container>
 
+
                 <!-- end first project -->
 
 
@@ -39,7 +40,7 @@
 
                 <!-- second project -->
 
-                <el-container class="mt">
+                <el-container class="project-container second-project">
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <div align="left">
@@ -72,7 +73,7 @@
 
                 <!-- third project -->
 
-                <el-container class="mt">
+                <el-container class="project-container third-project">
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <a href="https://my-hero-posts.herokuapp.com/" class="pl">
@@ -105,7 +106,7 @@
 
                 <!-- fourth project -->
 
-                <el-container class="mt">
+                <el-container class="project-container fourth-project">
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <div align="left">
@@ -141,9 +142,23 @@
 </template>
 
 <script>
-import 'element-ui/lib/theme-chalk/display.css';    
+    
+
+    import 'element-ui/lib/theme-chalk/display.css';    
     export default {
-        
+        mounted(){
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach((entry) => {
+                    if(entry.isIntersecting) {
+                        entry.target.classList.add('scrolled');
+                    }
+                });
+            });
+            observer.observe(document.querySelector('.first-project'));
+            observer.observe(document.querySelector('.second-project'));
+            observer.observe(document.querySelector('.third-project'));
+            observer.observe(document.querySelector('.fourth-project'));
+        }
     }
 </script>
 
@@ -152,17 +167,34 @@ import 'element-ui/lib/theme-chalk/display.css';
         background-color: var(--main-text-color);
         color: var(--secondary-text-color);
         font-size: 1.6rem;
-
     }
 
+    .project-container{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .scrolled{
+        animation: project-loading 2s ease-in-out;
+    }
+
+    @keyframes project-loading {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    
     .project-title{
         font-size: 1.5rem;
     }
 
+
     .techs ul{
         display: flex;
-        /* align-items: center;
-        justify-content: center; */
         list-style: none;
     }
 
@@ -234,10 +266,7 @@ import 'element-ui/lib/theme-chalk/display.css';
         background-color: var(--main-text-color);
     }
 
-    .mt{
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+    
 
     .image{
         max-width: 490px;
