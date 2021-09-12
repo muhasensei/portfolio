@@ -8,7 +8,7 @@
                             <el-col :sm="24" :md="12">
                                 <div align="center">
                                     <a href="https://derekterqory.netlify.app/" class="pl">
-                                        <img src="https://github.com/muhasensei/portfolio/blob/master/assets/derekter_qory.png" class="image">
+                                        <img src="https://raw.githubusercontent.com/muhasensei/portfolio/master/assets/derekter_qory.png" class="image">
                                     </a>
                                 </div>
                             </el-col>
@@ -59,7 +59,7 @@
                             </el-col>
                             <el-col :sm="24" :md="12">
                                 <a href="https://memories-mukhit-project.netlify.app/" class="pr">
-                                    <img src="https://github.com/muhasensei/portfolio/blob/master/assets/memories.png" class="image">
+                                    <img src="https://raw.githubusercontent.com/muhasensei/portfolio/master/assets/memories.png" class="image">
                                 </a>
                             </el-col>
                         </el-row>
@@ -76,7 +76,7 @@
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <a href="https://my-hero-posts.herokuapp.com/" class="pl">
-                                    <img src="https://github.com/muhasensei/portfolio/blob/master/assets/my_hero_posts.png" class="image">
+                                    <img src="https://raw.githubusercontent.com/muhasensei/portfolio/master/assets/my_hero_posts.png" class="image">
                                 </a>
                             </el-col>
                             <el-col :sm="24" :md="12">
@@ -127,7 +127,7 @@
                             </el-col>
                             <el-col :sm="24" :md="12">
                                 <a href="https://e-documents-kaznu.netlify.app/" class="pr">
-                                    <img src="https://github.com/muhasensei/portfolio/blob/master/assets/kaznu.png" class="image">
+                                    <img src="https://raw.githubusercontent.com/muhasensei/portfolio/master/assets/kaznu.png" class="image">
                                 </a>
                             </el-col>
                         </el-row>
