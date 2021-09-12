@@ -59,7 +59,7 @@
                             </el-col>
                             <el-col :sm="24" :md="12">
                                 <a href="https://memories-mukhit-project.netlify.app/" class="pr">
-                                    <img src="../static/memories.png" class="image">
+                                    <img src="https://muh1xx.netlify.app/static/memories.png" class="image">
                                 </a>
                             </el-col>
                         </el-row>
@@ -76,7 +76,7 @@
                         <el-row :gutter="24">
                             <el-col :sm="24" :md="12">
                                 <a href="https://my-hero-posts.herokuapp.com/" class="pl">
-                                    <img src="../static/my_hero_posts.png" class="image">
+                                    <img src="https://muh1xx.netlify.app/static/my_hero_posts.png" class="image">
                                 </a>
                             </el-col>
                             <el-col :sm="24" :md="12">
@@ -127,7 +127,7 @@
                             </el-col>
                             <el-col :sm="24" :md="12">
                                 <a href="https://e-documents-kaznu.netlify.app/" class="pr">
-                                    <img src="../static/kaznu.png" class="image">
+                                    <img src="https://muh1xx.netlify.app/static/kaznu.png" class="image">
                                 </a>
                             </el-col>
                         </el-row>
