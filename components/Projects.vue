@@ -8,7 +8,7 @@
                             <el-col :sm="24" :md="12">
                                 <div align="center">
                                     <a href="https://derekterqory.netlify.app/" class="pl">
-                                        <img src="../static/derekter_qory.png" class="image">
+                                        <img src="https://muh1xx.netlify.app/static/derekter_qory.png" class="image">
                                     </a>
                                 </div>
                             </el-col>
