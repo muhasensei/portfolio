@@ -172,18 +172,23 @@
     .project-container{
         margin-top: 100px;
         margin-bottom: 100px;
+        opacity: 0;
     }
 
     .scrolled{
         animation: project-loading 2s ease-in-out;
+        opacity: 1;
+        /* opacity: 0; */
     }
 
     @keyframes project-loading {
         0%{
             opacity: 0;
+            display: none;
         }
         100%{
             opacity: 1;
+            display: block;
         }
     }
 
