@@ -2,15 +2,17 @@
     <div>
         <center>
             <div class="first-section" id="about_me">
-                
+                    <div class="card-img">
+                        <img src="../assets/poland.jpg" alt="My photo">
+                    </div>
+                    <p class="light-p">
+                        Привет, меня зовут Мухит.
+                        Я junior веб-разработчик из Казахстана. На данный момент открыть к предложениям. 
+                    </p>
                     <p class="resume">
                         <el-button @click="openResume" href="https://hh.kz/resume/8776d6d4ff0920b1970039ed1f444641534972" plain>
                             Просмотреть резюме (hh.kz)
                         </el-button>
-                    </p>
-                    <p class="light-p">
-                        Привет, меня зовут Жанузаков Мухит.
-                        Я full-stack веб-разработчик из Казахстана. На данной момент открыть к предложениям. 
                     </p>
 
                     <el-row type="flex" justify="center" align="middle"  :gutter="12">
@@ -21,7 +23,7 @@
                             <div class="vertical-line"></div>
                         </el-col> 
                         <el-col :sm="12" :md="4" class="medium-p">
-                            HTML, CSS, Nuxt JS, Laravel 8, React JS, Vue JS, Express JS
+                            HTML, CSS, Nuxt JS, Vue JS, Express JS, Laravel
                         </el-col>
                     </el-row>
             </div>
@@ -44,14 +46,23 @@ import 'element-ui/lib/theme-chalk/display.css';
 
 <style scoped>
 
+    .card-img{
+        margin-top: 110px;
+    }
+
+    .card-img img{
+        width: 25%;
+        height: 25%;
+        clip-path: circle();
+    }
+
     .el-divider__text{
         background-color: var(--main-text-color);
         font-size: 1.6rem;
     }
 
-    .resume{
-        margin-top: 110px;
-    }
+    /* .resume{
+    } */
 
     .first-section{
         width: 70%;
@@ -62,7 +73,7 @@ import 'element-ui/lib/theme-chalk/display.css';
         font-size: 1.5rem;
         text-align: center;
         font-weight: 300;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
 
@@ -80,6 +91,10 @@ import 'element-ui/lib/theme-chalk/display.css';
     }
 
     @media (max-width: 600px) {
+        .card-img img{
+            width: 55%;
+            height: 55%;
+        }
         .first-section{
             width: 100%;
         }
