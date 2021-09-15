@@ -3,7 +3,7 @@
         <center>
             <div class="first-section" id="about_me">
                     <div class="card-img">
-                        <img src="../assets/poland.JPG" alt="My photo">
+                        <img src="../assets/poland.PNG" alt="My photo">
                     </div>
                     <p class="light-p">
                         Привет, меня зовут Мухит.
